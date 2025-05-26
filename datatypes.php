@@ -6,7 +6,7 @@ $val=12;
 var_dump($val);
 print'<br><br>';
 
-$val2=12.12;
+$val2=12.12;x;
 var_dump($val2);
 
 $val3="s";

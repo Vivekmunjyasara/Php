@@ -132,8 +132,20 @@
                 <th></th>
                 <th></th>
             </tr>
-            
-            
+            <tr>
+                <th>basix syntax</th>
+                <th>typecasting</th>
+                <th><a href="typecasting.php">typecasting</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>basix syntax</th>
+                <th>type juggling</th>
+                <th><a href="type_juggling.php">type juggling</th>
+                <th></th>
+                <th></th>
+            </tr>
             
             
             
