@@ -44,7 +44,6 @@ $v="hello world";
 echo 'string reverse: ';
 echo strrev($v);
 
-
 echo '<br><br>';
 $v=" hello world ";
 echo 'string trim: ';
@@ -88,7 +87,7 @@ $x="hello world!!";
 echo substr($x,6,6);
 echo '<br><br>';
 $x="hello world!!";
-echo substr($x,6,);
+echo substr($x,6);
 
 echo '<br><br>';
 $x="hello world!!";
