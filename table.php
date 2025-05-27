@@ -3,9 +3,18 @@
         <title>
          topics   
         </title>
+        <style>
+            body{
+                background:teal;
+            }
+            table{
+                background: rosybrown;
+            }
+            
+       </style>     
     </head>
     <body>
-        <table border="2px">
+        <table border="2px" align="center">
             <tr>
                 <th>Topics</th>
                 <th>Sub topics</th>
@@ -150,6 +159,21 @@
                 <th>basix syntax</th>
                 <th>multiarray</th>
                 <th><a href="multiarray.php">multi array</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>basix syntax</th>
+                <th>multiarray2</th>
+                <th><a href="multiarray2.php">multi array2</th>
+                <th></th>
+                <th></th>
+            </tr>
+            
+            <tr>
+                <th>basix syntax</th>
+                <th>string handling</th>
+                <th><a href="string_handling.php">string handling</th>
                 <th></th>
                 <th></th>
             </tr>
