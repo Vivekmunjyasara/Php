@@ -177,7 +177,13 @@
                 <th></th>
                 <th></th>
             </tr>
-            
+            <tr>
+                <th>basix syntax</th>
+                <th>classes</th>
+                <th><a href="classes.php">classes</th>
+                <th><a href="class2.php">class2</th>
+                <th></th>
+            </tr>
             
             
             
