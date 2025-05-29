@@ -4,7 +4,7 @@ class fruit
     public function myvalue()
     {
         //method
-        return __METHOD__;
+        echo __METHOD__;
         echo '<br><br>';
         //class
         return __CLASS__;
