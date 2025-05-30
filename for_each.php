@@ -15,6 +15,7 @@ foreach ($members as $x=>$y)
     echo "$x : $y <br>";
 }
 
+//another example
 class car
 {
     public $color;
