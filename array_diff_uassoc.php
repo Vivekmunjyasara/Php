@@ -15,8 +15,4 @@ $result= array_diff_uassoc($a1,$a2,"myfunction");
 print_r($result);
 
 
-
-
-
-
 ?>
