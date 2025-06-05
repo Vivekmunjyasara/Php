@@ -2,11 +2,20 @@
 
 function myfunction($a,$b)
 {
+    var_dump($a);
+    var_dump($b);
+    var_dump($a>$b);
+    echo "<br><br>";
+    
     if($a===$b)
     {
+        echo "$a hi $b <br>";
         return 0;
     }
-    return ($a>$b)?1:-1; 
+        echo "$a hello $b <br>";
+        echo (($a>$b)?1:-1);
+        echo "<br>";
+        return ($a>$b)?1:-1; 
 }
 $a1=array("a"=>"red","b"=>"green","c"=>"blue");
 $a2=array("d"=>"red","b"=>"green","e"=>"blue");
