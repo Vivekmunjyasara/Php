@@ -131,7 +131,7 @@
                 <th>basic syntax</th>
                 <th>array</th>
                 <th><a href="array.php">array</th>
-                <th></th>
+                <th><a href="array_with_function.php">array_with_function</th>
                 <th></th>
             </tr>
             <tr>
@@ -169,7 +169,6 @@
                 <th></th>
                 <th></th>
             </tr>
-            
             <tr>
                 <th>basic syntax</th>
                 <th>string handling</th>
@@ -180,8 +179,8 @@
             <tr>
                 <th>basic syntax</th>
                 <th>classes</th>
-                <th><a href="classes.php">classes</th>
-                <th><a href="class2.php">class2</th>
+                <th><a href="classes.php">classes/objects</th>
+                <th><a href="class2.php">class2 and objects</th>
                 <th></th>
             </tr>
             <tr>
@@ -233,13 +232,7 @@
                 <th><a href="break_loop.php">break loop</th>
                 <th></th>
             </tr>
-            
-            
-            
-            
-            
-            
-        </table>
+              </table>
               
         <?php
         ?>
