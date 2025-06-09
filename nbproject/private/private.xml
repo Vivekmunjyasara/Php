@@ -3,46 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/math_max.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_change_key_case.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_chunk.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_column.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_combine.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_count_values.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_diff.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_diff_assoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_diff_key.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_diff_uassoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_udiff_assoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_udiff_uassoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_uintersect.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_uintersect_assoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_uintersect_uassoc.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_unique.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_values.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_walk.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_walk_recursive.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_compact.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_count.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_current.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_each.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_end.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_extract.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_in_array.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_key.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_list.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_natcasesort.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_natsort.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_next.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_pos.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_prev.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_range.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_reset.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_shuffle.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_sixeof.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_uasort.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_uksort.php</file>
-            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/array_usort.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/SUPERGLOBALS/supergloabl_server.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/SUPERGLOBALS/submitserver.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/REGEX/preg_match.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/REGEX/preg_match_all.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/REGEX/preg_replace.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/REGEX/insensitive_search.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/REGEX/full_line.php</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/calcu1.html</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/resultcalculator.html</file>
+            <file>file:/C:/Users/GSP-LAP-001/Documents/NetBeansProjects/Php/resultcalculator2.php</file>
         </group>
     </open-files>
 </project-private>
