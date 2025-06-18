@@ -14,44 +14,52 @@
                 background-color: #b9936c;
             }
             
-            @media(max-width:576px){ 
+            @media(max-width:820px)
+            {
+                .bl{
+                    display: block;
+                    margin-bottom: 2%;
+                }
+                .bo{
+                    margin-bottom: 2%;
+                }
+                .j{
+                    width: 70%;
+                    margin-left: 17%;
+                    
+                    
+                }
+            }
+            
+            @media(max-width:820px){ 
                 .md_ad_form
                 {
                     margin: 20px 20px 20px 0px; 
                 }
-                input::placeholder{
-                    color: yellow !important;
+                input::placeholder;
                     opacity: 1;
                 }
             }
             
-            @media(max-width:768px){
+            @media(max-width: 920px){
                 
                 input::placeholder{
                     color: white !important ;
                     opacity: 1;
                 }
                 }
-                
-                @media(max-width:576px){
+              
+                @media(max-width:820px){
                     .vi{
-                        padding-right:300px;
+                        padding-right:60%;
+                    }
+                    .v{
+                        padding-right: 66%;
+                    }
+                    .m{
+                         margin-left: 7%;
                     }
                 }
-                
-                @media(max-width:400px){
-                    .hi{
-                        padding-right:100px;
-                    }
-                    
-                }
-                @media(max-width:400px){
-                    .na{
-                        padding-right: 150px;
-                    }
-                }
-                
-                
                 
                 
             input::placeholder{
@@ -77,42 +85,42 @@
                 </div>
             
             <div class="row">
-                <div class="col-sm-3">
-                <input class="col-sm-12 vi hi md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
+                <div class="col-lg-3">
+                <input class="col-lg-12 m vi hi md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-12 vi hi md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
+                <div class="col-lg-3">
+                <input class="col-lg-12 m vi hi md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-12 vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
+                <div class="col-lg-3">
+                <input class="col-lg-12 m vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-12 vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
+                <div class="col-lg-3">
+                <input class="col-lg-12 m vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
                 </div>
                 
                 </div>
             <div class="row">
-                <div class="col-sm-6">
-                 <input class="col-sm-12 vi mt-3 p-2 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
+                <div class="col-lg-6">
+                 <input class="col-lg-12 m vi hi mt-3 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
                 </div>
                  
-               <span class="col-sm-6 mt-3">Select Gender :
+               <span class="col-lg-6 m mt-3">Select Gender :
             
-                <span class="col-sm-6"></span>
+                <span class="col-lg-6"></span>
                 <br>
                 
-                         <input class="col-sm-1 " type="radio" value="Male">Male 
-                         <input class="col-sm-1 " type="radio" value="Female">Female 
-                         <input class="col-sm-1 " type="radio" value="Other">Other</span>
+                         <input class="col-lg-1 m " type="radio" value="Male">Male 
+                         <input class="col-lg-1 m " type="radio" value="Female">Female 
+                         <input class="col-lg-1 m " type="radio" value="Other">Other</span>
             </div>   
             
             <div class="row">
-                <div class="col-sm-3 mt-3">   
-               <span class=" col-sm-12 fw-bold">Education</span>
-                 <select class="col-sm-12 border-white bg-transparent">
+                <div class="col-lg-3 bo mt-3">   
+               <span class=" col-lg-12 bl m fw-bold">🎓Education</span>
+                 <select class="col-lg-12 m border-white bg-transparent">
                     <option name="Education">Education</option>
                     <option name="SSC">SSC</option>
                     <option name="HSC">HSC</option>
@@ -121,9 +129,9 @@
                 </select>
             </div>
              
-            <div class="col-sm-3 mt-3">
-               <span class=" col-sm-12 fw-bold">Language</span>
-                <select class="col-sm-12 border-white bg-transparent">
+            <div class="col-lg-3 mt-3">
+               <span class=" col-lg-12 bl m fw-bold">𝗘𝗡╸Language</span>
+                <select class="col-lg-12 m border-white bg-transparent">
                     <option name="Language">Language</option>
                     <option name="Marathi">Marathi</option>
                     <option name="Hindi">Hindi</option>
@@ -133,9 +141,9 @@
                 </select>
              </div>
             
-            <div class="col-sm-3 mt-3">
-               <span class="col-sm-12 mt-4 fw-bold border-white">Percentage</span>
-                <select class="col-sm-12 mt-1 border-white bg-transparent">
+            <div class="col-lg-3 mt-3">
+               <span class="col-lg-12 mt-4 m bl fw-bold border-white">% Percentage</span>
+                <select class="col-lg-12 mt-1 m border-white bg-transparent">
                     <option name="Percentage">Percentage</option>
                    <?php
                     for($i=1;$i<=100;$i++)
@@ -146,10 +154,10 @@
                 </select>
             </div>
             
-            <div class="col-sm-3 mt-3">
-               <span class="col-sm-12 mt-4 fw-bold">Passing Year</span>
+            <div class="col-lg-3 mt-3">
+               <span class="col-lg-12 mt-4 bl m fw-bold">📅Passing Year</span>
                  
-                <select class="col-sm-12 mt-1 border-white bg-transparent">
+                <select class="col-lg-12 mt-1 m border-white bg-transparent">
                     <option name="Passing  Year">Passing year</option>
                     <?php
                     for($i=1800;$i<2026;$i++)
@@ -162,44 +170,44 @@
         </div>    
             <div class="row">
                 
-                <div class="col-sm-3">
-                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
+                <div class="col-lg-3">
+                <input class="col-lg-11 vi hi m mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
+                <div class="col-lg-3">
+                <input class="col-lg-11 vi hi m mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
+                <div class="col-lg-3">
+                <input class="col-lg-11 vi hi mt-4 m md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
                 </div>
                 
-                <div class="col-sm-3">
-                <input class="col-sm-11 mt-4 vi hi md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
+                <div class="col-lg-3">
+                <input class="col-lg-11 mt-4 vi hi m md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
                 </div>
             </div>    
                 
             <div class="row">
-                 <div class="col-sm-6">
-                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
+                 <div class="col-lg-6">
+                <input class="col-lg-12 vi hi mt-4 m md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
                  </div>
                 
-                <div class="col-sm-6">
-                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
+                <div class="col-lg-6">
+                <input class="col-lg-12 vi hi mt-4 m md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
                 </div>
                 </div>    
             
         <div class="row mt-3">    
-            <div class="col-sm-3 "> 
-               <span class="col-sm-12 fw-bold  ">Date of Birth</span>
+            <div class="col-lg-3 "> 
+               <span class="col-lg-12 fw-bold m bl">🎂Date of Birth</span>
                
-                  <input class="col-sm-12 vi hi mt-1 border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
+                <input class="col-lg-12 mt-1 v m border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
                
             </div>    
                 
-            <div class="col-sm-3">  
-                <span class="col-sm-12 mt-4 fw-bold">Blood Group</span>
-                <select class="col-sm-12 mt-1 border-white bg-transparent">
+            <div class="col-lg-3">  
+                <span class="col-lg-12 mt-4 bl m fw-bold">🩸Blood Group</span>
+                <select class="col-lg-12 mt-1 m border-white bg-transparent">
                     <option name="Blood Group">Blood Group</option>
                     <option name="A+">A+</option>
                     <option name="A-">A-</option>
@@ -212,18 +220,18 @@
                 </select>
             </div>    
                 
-            <div class="col-sm-3">
-               <span class="col-sm-12 mt-4 fw-bold">Country</span>
-                <select class="col-sm-12 border-white mt-1 bg-transparent ">
+            <div class="col-lg-3">
+               <span class="col-lg-12 mt-4 bl m fw-bold">🌐Country</span>
+                <select class="col-lg-12 border-white m mt-1 bg-transparent ">
                     <option name="Country"> Select Country</option>
                     <option name="India">India</option>                 
                 </select> 
             </div>
 
-            <div class="col-sm-3">
-                <span class="col-sm-12 mt-4 fw-bold ">State</span>   
+            <div class="col-lg-3">
+                <span class="col-lg-12 mt-4 bl fw-bold m ">🌐State</span>   
                 
-                <select class="col-sm-12 mt-1 border-white bg-transparent">
+                <select class="col-lg-12 mt-1 border-white m bg-transparent">
                     <option name="State"> Select State</option>
                     <option name="Andhra Pradesh">Andhra pradesh</option>
                     <option name="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -258,18 +266,18 @@
         </div>
             
             <div class="row">
-                 <div class="col-sm-6">
-                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
+                 <div class="col-lg-6">
+                <input class="col-lg-12 vi hi mt-4 md_ad_form m border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
                  </div>
                 
-                <div class="col-sm-6">
-                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file" placeholder="Upload Your Photo">
+                <div class="col-lg-6">
+                <input class="col-lg-12 vi hi mt-4 md_ad_form m border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file" placeholder="Upload Your Photo">
                 </div>
                 
             </div>
                  <div class="row">
-        <span class="col-sm-3"></span>
-            <input class="col-sm-5 mt-5 text-center border-white rounded-pill" type="submit">
+        <span class="col-lg-3"></span>
+            <input class="col-lg-5 j mt-5 text-center  border-white rounded-pill" type="submit">
         </div>  
                 <br><br>
                 
