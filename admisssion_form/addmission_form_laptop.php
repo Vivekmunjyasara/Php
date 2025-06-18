@@ -2,66 +2,24 @@
 <html>
     <head>
         <title>ADMISSION FORM</title>
-        <style>
-            body{
-                background: #988eed;
-            }
-
-            .container{
-                max-width: 750px;
-                margin: 40px auto;
-                background: #4e488c;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                padding: 50px;
-                border-radius: 5px;
-            }
-            h1{
-                text-align: center;
-                color: white;
-                border: 1px solid white;
-                padding-bottom: 10px;
-                padding-left: 2px;
-                padding-right: 2px;
-                padding-top: 10px;
-                border-radius: 7px;
-            }
-            label{
-                color: white;
-            }
-            option{
-                background: #4e488c;
-                border: 1px solid black;
-            }
-            #hii{
-                color: red;
-            }
-            button{
-                border: 1px solid white;
-                padding-left: 350px;
-                padding-right: 350px;
-                border-radius: 15px;
-                padding-bottom: 5px;
-                padding-top: 5px;
-            }
-
-        </style>
-    </head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
     <body>
-        <div class="container">
-                <h1>Admission Form</h1>
+        <div class="form-container">
+            <h1>Admission Form</h1>
             <form>
                 <input type="name" placeholder="First Name">
                 <input type="name" placeholder="Middle Name">
                 <input type="name" placeholder="Last Name">
                 <input type="number" placeholder="Enter Mobile No">
-                <br><br><br>
+                   
                 <input type="email" placeholder="Email Address">
 
                 <label>Select Gender :</label>
-                <pre>
+                
                          <input type="radio" value="Male">Male  <input type="radio" value="Female">Female  <input type="radio" value="Other">Other
-                </pre>
-
+                
                 <label><b>Education</b></label>
                 <select>
                     <option name="Education">Education</option>
@@ -100,17 +58,16 @@
                     <option name="2023">2023</option>
                     <option name="2024">2024</option>
                 </select>
-                <br><br><br><br>
+                
 
                 <input type="address" placeholder="Wing/Flat no">
                 <input type="address" placeholder="Building/Society">
                 <input type="address" placeholder="Area">
                 <input type="address" placeholder="City">   
-                <br><br>
+  
                 <input type="address" placeholder="Landmark">
                 <input type="address" placeholder="Enter PIN code">
 
-                <br><br><br>
                 <label>Date of Birth</label>
                 <input type="date">
 
@@ -166,16 +123,14 @@
                     <option name="Uttar Pradesh">Uttar pradesh</option>
                     <option name="West Bengal">West Bengal</option>   
                 </select>
-                <br><br><br>
-
+  
                 <input type="name" placeholder="Refrence By">   
                 <input type="file" placeholder="Upload Your Photo">
-                <br><br><br>
+                
             </form>
             <button type="submit">Submit</button>
 
         </div>
     </body>
 </html>
-
 
