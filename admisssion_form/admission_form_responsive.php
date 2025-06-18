@@ -32,7 +32,28 @@
                     opacity: 1;
                 }
                 }
-           
+                
+                @media(max-width:576px){
+                    .vi{
+                        padding-right:300px;
+                    }
+                }
+                
+                @media(max-width:400px){
+                    .hi{
+                        padding-right:100px;
+                    }
+                    
+                }
+                @media(max-width:400px){
+                    .na{
+                        padding-right: 150px;
+                    }
+                }
+                
+                
+                
+                
             input::placeholder{
                 color: white;
             }
@@ -57,25 +78,25 @@
             
             <div class="row">
                 <div class="col-sm-3">
-                <input class="col-sm-12 ms-3 md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
+                <input class="col-sm-12 vi hi md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-12 md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
+                <input class="col-sm-12 vi hi md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-12 md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
+                <input class="col-sm-12 vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-12 md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
+                <input class="col-sm-12 vi hi md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
                 </div>
                 
                 </div>
             <div class="row">
                 <div class="col-sm-6">
-                 <input class="col-sm-12 mt-3 p-2 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
+                 <input class="col-sm-12 vi mt-3 p-2 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
                 </div>
                  
                <span class="col-sm-6 mt-3">Select Gender :
@@ -142,34 +163,37 @@
             <div class="row">
                 
                 <div class="col-sm-3">
-                <input class="col-sm-11 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
+                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-11 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
+                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-11 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
+                <input class="col-sm-11 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
                 </div>
                 
                 <div class="col-sm-3">
-                <input class="col-sm-11 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
+                <input class="col-sm-11 mt-4 vi hi md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
                 </div>
             </div>    
                 
             <div class="row">
-                <input class="col-sm-5 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
-                <span class="col-sm-1"></span>
+                 <div class="col-sm-6">
+                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
+                 </div>
                 
-                <input class="col-sm-5 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
-            </div>    
+                <div class="col-sm-6">
+                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
+                </div>
+                </div>    
             
         <div class="row mt-3">    
             <div class="col-sm-3 "> 
                <span class="col-sm-12 fw-bold  ">Date of Birth</span>
                
-                  <input class="col-sm-12 mt-1 border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
+                  <input class="col-sm-12 vi hi mt-1 border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
                
             </div>    
                 
@@ -234,11 +258,12 @@
         </div>
             
             <div class="row">
-                <input class="col-sm-5 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
-                <span class="col-sm-1"></span>
+                 <div class="col-sm-6">
+                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
+                 </div>
                 
                 <div class="col-sm-6">
-                <input class="col-sm-12 mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file" placeholder="Upload Your Photo">
+                <input class="col-sm-12 vi hi mt-4 md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file" placeholder="Upload Your Photo">
                 </div>
                 
             </div>
