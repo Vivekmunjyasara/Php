@@ -28,11 +28,11 @@
                     margin-left: 17%;
                 }
                 .in1{
-                    padding-right: 67% !important;
+                    padding-right: 66% !important;
                     padding-bottom: 3%;
                 }
                 .in2{
-                    padding-right: 74% !important;
+                    padding-right: 73% !important;
                     padding-bottom: 3%;
                 }
                 .in3{
@@ -40,15 +40,19 @@
                     padding-bottom: 3%;
                 }
                 .in4{
-                    padding-right: 69% !important;
+                    padding-right: 71% !important;
+                    padding-bottom: 3%;
+                }
+                .in5{
+                    padding-right: 70% !important;
                     padding-bottom: 3%;
                 }
                 .inco{
-                    padding-right: 67% !important;
+                    padding-right: 68% !important;
                     padding-bottom: 3%;
                 }
                 .inst{
-                    padding-right: 62% !important;
+                    padding-right: 63% !important;
                     padding-bottom: 3%;
                 }
 
@@ -107,7 +111,7 @@
                     padding-right: 64% !important;
                 }
                 .in11{
-                    padding-right: 65% !important;
+                    padding-right: 66% !important;
                     padding-bottom: 3%;
                 }
                 .in22{
@@ -115,11 +119,11 @@
                     padding-bottom: 3%;
                 }
                 .in33{
-                    padding-right: 71% !important;
+                    padding-right: 72% !important;
                     padding-bottom: 3%;
                 }
                 .in44{
-                    padding-right: 70% !important;
+                    padding-right: 71% !important;
                     padding-bottom: 3%;
                 }
                 .in444{
@@ -190,7 +194,108 @@
                     margin-left: 15%;
                 }
             }
+            
+            
+            
+            @media(max-width:599px){
+                .sm{
+                    padding-right: 50% !important;
+                }
+                .sm1{
+                    padding-right: 58% !important;
+                }
+                .ms{
+                    padding-right: 57% !important;
+                }
+                .ms1{
+                    padding-right: 65% !important;
+                }
+                .ms2{
+                    padding-right: 64% !important;
+                }
+                .ms3{
+                    padding-right: 62% !important;
+                }
+                .ms4{
+                    padding-right: 64% !important;
+                }
+                .ms5{
+                    padding-right: 61% !important;
+                }
+                .ms6{
+                    padding-right: 56% !important;
+                } 
+            }
+            @media(max-width:470px){
+                .smm{
+                    padding-right: 36% !important;
+                }
+                .smm1{
+                    padding-right: 46% !important;
+                }
+                .mss{
+                    padding-right: 47% !important;
+                }
+                .mss1{
+                    padding-right: 57% !important;
+                }
+                .mss2{
+                    padding-right: 54% !important;
+                }
+                .mss3{
+                    padding-right: 53% !important;
+                }
+                .mss4{
+                    padding-right: 51% !important;
+                }
+                .mss5{
+                    padding-right: 48% !important;
+                }
+                .mss6{
+                    padding-right: 42% !important;
+                }
+                
+                
+            }
 
+             @media(max-width:360px){
+                .smmm{
+                    padding-right: 25% !important;
+                }
+                .smmm1{
+                    padding-right: 38% !important;
+                }
+                .msss{
+                    padding-right: 40% !important;
+                }
+                .msss1{
+                    padding-right: 53% !important;
+                }
+                .msss2{
+                    padding-right: 50% !important;
+                }
+                .msss3{
+                    padding-right: 48% !important;
+                }
+                .msss4{
+                    padding-right: 46% !important;
+                }
+                .msss5{
+                    padding-right: 42% !important;
+                }
+                .msss6{
+                    padding-right: 32% !important;
+                }
+            }
+            @media(max-width:700px){
+                .con{
+                    width: 500px;
+                    margin: auto;
+                }
+            }
+            
+           
+            
             /*main design*/
             input::placeholder{
                 color: white;
@@ -208,7 +313,7 @@
 
     </head>
     <body>        
-        <form class="container con rounded ">
+        <form class="container con rounded container ">
             <br><br>
             <div class="text-center">
                 <h1 class="fw-bold display-3 border border-1 border-dark rounded-pill mb-5 ">Admission Form</h1>
@@ -216,25 +321,25 @@
 
             <div class="row">
                 <div class="col-lg-3">
-                    <input class="col-lg-12 pp sp ifn m vi hi pr md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
+                    <input class="col-lg-12 pp sm smm smmm sp ifn m vi hi pr md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-12 pp m sp vi hi md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
+                    <input class="col-lg-12 pp sm smm smmm m sp vi hi md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-12 m pp vi sp hi md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
+                    <input class="col-lg-12 m pp sm smm smmm vi sp hi md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-12 m vi pp hi sp md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
+                    <input class="col-lg-12 m vi pp sm smm smmm hi sp md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
                 </div>
 
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <input class="col-lg-12 m vi hi pp sp mt-3 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
+                    <input class="col-lg-12 m vi hi sm smm smmm pp sp mt-3 md_ad_form  bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
                 </div>
 
                 <span class="col-lg-6 m sp mt-3">Select Gender :
@@ -250,7 +355,7 @@
             <div class="row h">
                 <div class="col-lg-3 bo mt-3">   
                     <span class=" col-lg-12 wi bb  bl bll m fw-bold">🎓Education</span>
-                    <select class="col-sm-12 j wid inp1 in11 wi in1 m border-white bg-transparent">
+                    <select class="col-lg-12 j wid ms mss msss inp1 in11 wi in1 m border-white bg-transparent">
                         <option name="Education">Education</option>
                         <option name="SSC">SSC</option>
                         <option name="HSC">HSC</option>
@@ -262,7 +367,7 @@
                 <div class="col-lg-3 mt-3">
                     
                     <span  class=" col-lg-12 t bl m   bb wi bll fw-bold">𝗘𝗡╸Language</span>
-                    <select class="col-sm-12 inp2  in2 in22 wi m border-white bg-transparent">
+                    <select class="col-lg-12 inp2 ms1 mss1 msss1 in2 in22 wi m border-white bg-transparent">
                         <option name="Language">Language</option>
                         <option name="Marathi">Marathi</option>
                         <option name="Hindi">Hindi</option>
@@ -276,7 +381,7 @@
                      
                 <div class="col-lg-3 mt-3">
                     <span class="col-lg-12 mt-4 m  bb bl wi bll fw-bold border-white">% Percentage</span>
-                    <select class="col-sm-12 inp3 in3 wi m in33 border-white bg-transparent">
+                    <select class="col-lg-12 inp3 in3 ms2 mss2 msss2 wi m in33 border-white bg-transparent">
                         <option name="Percentage">Percentage</option>
                         <?php
                         for ($i = 1; $i <= 100; $i++) {
@@ -289,7 +394,7 @@
                 <div class="col-lg-3 mt-3">
                     <span class="col-lg-12 mt-4 bl wi bb m  bll fw-bold">📅Passing Year</span>
 
-                    <select class="col-sm-12 in4 inp4 m wi in44 border-white bg-transparent">
+                    <select class="col-lg-12 in4 inp4 m wi ms3 mss3 msss3 in44 border-white bg-transparent">
                         <option name="Passing  Year">Passing year</option>
                         <?php
                         for ($i = 1800; $i < 2026; $i++) {
@@ -302,29 +407,29 @@
             <div class="row">
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 pp vi hi m mt-4 sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
+                    <input class="col-lg-11 pp vi hi m mt-4 sm smm smmm sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Wing/Flat no">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 pp vi hi m mt-4 sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
+                    <input class="col-lg-11 pp vi hi m mt-4 sp sm smm smmm md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Building/Society">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 pp vi hi mt-4 m sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
+                    <input class="col-lg-11 pp vi hi mt-4 m sp sm smm smmm md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Area">
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 pp mt-4 vi hi m sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
+                    <input class="col-lg-11 pp mt-4 vi hi m sp sm smm smmm md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="City">   
                 </div>
             </div>    
 
             <div class="row">
                 <div class="col-lg-6">
-                    <input class="col-lg-12 vi pp hi mt-4 m sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
+                    <input class="col-lg-12 vi pp hi mt-4 m sp sm smm smmm md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Landmark">
                 </div>
 
                 <div class="col-lg-6">
-                    <input class="col-lg-12 vi hi pp mt-4 m sp md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
+                    <input class="col-lg-12 vi hi pp mt-4 m sp sm smm smmm md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="address" placeholder="Enter PIN code">
                 </div>
             </div>    
 
@@ -332,13 +437,13 @@
                 <div class="col-lg-3 "> 
                     <span class="col-lg-12 pp fw-bold wi di m bl">🎂Date of Birth</span>
 
-                    <input class="col-lg-12 mt-1 mb v gg m inp wi pa border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
+                    <input class="col-lg-12 mt-1 mb sm1 smm1 smmm1 v gg m inp wi pa border-white md_ad_form  bg-transparent border-top-0 border-start-0 border-end-0 text-white " type="date">
 
                 </div>    
 
                 <div class="col-lg-3">  
                     <span class="col-lg-12 mt-4 bll y bl wi m fw-bold">🩸Blood Group</span>
-                    <select class="col-lg-12 mt-1 inp5 mb  in11 in4 in444 m wi border-white bg-transparent">
+                    <select class="col-lg-12 mt-1 ms4 mss4 msss4 inp5 mb  in5 in444 m wi border-white bg-transparent">
                         <option name="Blood Group">Blood Group</option>
                         <option name="A+">A+</option>
                         <option name="A-">A-</option>
@@ -353,7 +458,7 @@
 
                 <div class="col-lg-3">
                     <span class="col-lg-12 mt-4 bl bll y t m wi fw-bold">🌐Country</span>
-                    <select class="col-lg-12 border-white mb inp6 in5 wi inco m mt-1 bg-transparent ">
+                    <select class="col-lg-12 border-white ms5 mss5 msss5 mb inp6 in5 wi inco m mt-1 bg-transparent ">
                         <option name="Country"> Select Country</option>
                         <option name="India">India</option>                 
                     </select> 
@@ -362,7 +467,7 @@
                 <div class="col-lg-3">
                     <span class="col-lg-12 wi mt-4 bl y bll t fw-bold m ">🌐State</span>   
 
-                    <select class="col-lg-12 wi mt-1 border-white inp7 inp in6 inst m bg-transparent">
+                    <select class="col-lg-12 wi mt-1 border-white ms6 mss6 msss6 inp7 inp in6 inst m bg-transparent">
                         <option name="State"> Select State</option>
                         <option name="Andhra Pradesh">Andhra pradesh</option>
                         <option name="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -398,7 +503,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <input class="col-lg-12 vi hi pp mt-4 sp md_ad_form m border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
+                    <input class="col-lg-12 vi hi pp mt-4 sp sm smm smmm md_ad_form m border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
                 </div>
 
                 <div class="col-lg-6">
