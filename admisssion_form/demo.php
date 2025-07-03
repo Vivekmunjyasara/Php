@@ -18,29 +18,32 @@
                 <h1 class="fw-bold display-3 border border-1 border-dark rounded-pill mb-5 ">Admission Form</h1>
             </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col-lg-3">
-                    <input id="fn" class="col-lg-12 bot  wid widd widdd widddd widdddd widddddd md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
-                    <div id="error"></div>
+                    <input id="fn" class="col-lg-12  bot  wid widd widdd widddd widdddd widddddd md_ad_form bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" placeholder="First Name">
+                    <div id="error" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
                     <input id="mn" class="col-lg-12 bot wid widd widdd widddd widdddd widddddd  md_ad_form bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" placeholder="Middle Name">
-                    <div id="error"></div>
+                    <div id="error1" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
                     <input id="ln" class="col-lg-12 bot wid widd widdd widddd widdddd widddddd md_ad_form  bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" placeholder="Last Name">
+                    <div id="error2" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
-                    <input id="pn" class="col-lg-12 bott mb-4 md_ad_form wid widd widdd widddd widdddd widddddd  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="number" placeholder="Enter Mobile No">
-                </div>
+                    <input id="pn" class="col-lg-12 bott md_ad_form wid widd widdd widddd widdddd widddddd  bg-transparent border-top-0 border-start-0 border-end-0 border-white text-white" type="text" placeholder="Enter Mobile No">
+                    <div id="error3" class="red"></div>
+            </div>
 
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <input id="ema" class="col-lg-12 bot mt-2 md_ad_form wid widd widdd widddd widdddd widddddd bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="email" placeholder="Email Address">
+                    <div id="error19" class="red"></div>
                 </div>
 
                 <span class="col-lg-6 m sp mt-3">Select Gender :
@@ -49,8 +52,8 @@
                     <br>
                     <input id="m" class="col-lg-1 m sp" type="radio" name="gender" value="Male" >Male 
                     <input id="f" class="col-lg-1 m sp" type="radio" name="gender" value="Female">Female 
-                    <input id="o" class="col-lg-1 m sp" type="radio" name="gender" value="Other">Other</span>
-                        
+                    <input id="o" class="col-lg-1 m sp" type="radio" name="gender" value="Other">Other
+                     <div id="error4" class="red"></div></span>   
             </div>   
 
             <div class="row h">
@@ -63,6 +66,8 @@
                         <option name="Diploma">Diploma</option>
                         <option name="Post Graduation">Post Graduation</option>
                     </select>
+                    <div id="error5" class="red"></div>
+                        
                 </div>
 
                 <div class="col-lg-3 mt-3">
@@ -76,7 +81,7 @@
                         <option name="English">English</option>
                         <option name="Others">Others</option>
                     </select>
-                    
+                    <div id="error6" class="red"></div>
                 </div>
                 
                      
@@ -90,6 +95,7 @@
                         }
                         ?>
                     </select>
+                    <div id="error7" class="red"></div>
                 </div>
 
                 <div class="col-lg-3 mt-3">
@@ -101,35 +107,42 @@
                             echo "<option> $i </option>";
                         }
                         ?>
-                    </select>    
+                    </select>   
+                    <div id="error8" class="red"></div>
                 </div>
             </div>    
             <div class="row mt-4">
 
                 <div class="col-lg-3">
                     <input id="wing" class="col-lg-11 bot md_ad_form border-white bg-transparent wid widd widdd widddd widdddd widddddd border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Wing/Flat no">
+                    <div id="error13" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 bot md_ad_form wid widd widdd widddd widdddd widddddd border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Building/Society">
+                    <input id="build" class="col-lg-11 bot md_ad_form wid widd widdd widddd widdddd widddddd border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Building/Society">
+                    <div id="error14" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 bot md_ad_form border-white bg-transparent wid widd widdd widddd widdddd widddddd border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Area">
+                    <input id="area" class="col-lg-11 bot md_ad_form border-white bg-transparent wid widd widdd widddd widdddd widddddd border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Area">
+                    <div id="error15" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
-                    <input class="col-lg-11 bot wid widd widdd widddd widdddd widddddd  md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="City">   
+                    <input id="city" class="col-lg-11 bot wid widd widdd widddd widdddd widddddd  md_ad_form border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="City">   
+                     <div id="error16" class="red"></div>   
                 </div>
             </div>    
 
             <div class="row mt-3">
                 <div class="col-lg-6">
-                    <input class="col-lg-12 bot md_ad_form border-white bg-transparent wid widd widdd widddd widdddd widddddd border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Landmark">
+                    <input id="land" class="col-lg-12 bot md_ad_form border-white bg-transparent wid widd widdd widddd widdddd widddddd border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Landmark">
+                    <div id="error17" class="red"></div>
                 </div>
 
                 <div class="col-lg-6">
-                    <input id="pi" class="col-lg-12 bot md_ad_form border-white wid widd widdd widddd widdddd widddddd bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text" placeholder="Enter PIN code">
+                    <input id="pi" class="col-lg-12 bot md_ad_form border-white wid widd widdd widddd widdddd widddddd bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="text%" placeholder="Enter PIN code">
+                     <div id="error12" class="red"></div>
                 </div>
             </div>    
 
@@ -137,13 +150,13 @@
                 <div class="col-lg-3 "> 
                     <span class="col-lg-12 fw-bold ">🎂Date of Birth</span>
 
-                    <input class="col-lg-12 bot mt-2 mb-3 border-white md_ad_form  bg-transparent border-top-0 wid widd widdd widddd widdddd widddddd border-start-0 border-end-0 text-white " type="date">
-
+                    <input id="dob" class="col-lg-12 bot mt-2  border-white md_ad_form  bg-transparent border-top-0 wid widd widdd widddd widdddd widddddd border-start-0 border-end-0 text-white " type="date">
+                    <div id="error18" class="red"></div>
                 </div>    
 
                 <div class="col-lg-3">  
                     <span class="col-lg-12 mt-4 fw-bold">🩸Blood Group</span>
-                    <select class="col-lg-12 mt-2 bot mb-3 pad wid widd widdd widddd widdddd widddddd  border-white bg-transparent">
+                    <select id="bg" class="col-lg-12 mt-2 bot pad wid widd widdd widddd widdddd widddddd  border-white bg-transparent">
                         <option name="Blood Group">Blood Group</option>
                         <option name="A+">A+</option>
                         <option name="A-">A-</option>
@@ -154,21 +167,23 @@
                         <option name="O+">O+</option>
                         <option name="O-">O-</option>
                     </select>
+                    <div id="error9" class="red"></div>
                 </div>    
 
                 <div class="col-lg-3">
                     <span class="col-lg-12 mt-4 fw-bold">🌐Country</span>
-                    <select class="col-lg-12 mt-2 bot mb-3 pad border-white wid widd widdd widddd widdddd widddddd  mt-1 bg-transparent ">
-                        <option name="Country"> Select Country</option>
+                    <select id="cou" class="col-lg-12 mt-2 bot pad border-white wid widd widdd widddd widdddd widddddd  mt-1 bg-transparent ">
+                        <option name="Country">Country</option>
                         <option name="India">India</option>                 
                     </select> 
+                    <div id="error10" class="red"></div>
                 </div>
 
                 <div class="col-lg-3">
                     <span class="col-lg-12 mt-1 fw-bold bl ">🌐State</span>   
 
-                    <select class="col-lg-12 mt-2 bot mb-3 pad border-white wid widd widdd widddd widdddd widddddd bg-transparent">
-                        <option name="State"> Select State</option>
+                    <select id="sta" class="col-lg-12 mt-2 bot  pad border-white wid widd widdd widddd widdddd widddddd bg-transparent">
+                        <option name="State">State</option>
                         <option name="Andhra Pradesh">Andhra pradesh</option>
                         <option name="Arunachal Pradesh">Arunachal Pradesh</option>
                         <option name="Assam">Assam</option>
@@ -198,16 +213,18 @@
                         <option name="Uttar Pradesh">Uttar pradesh</option>
                         <option name="West Bengal">West Bengal</option>   
                     </select>
+                    <div id="error11" class="red"></div>
                 </div>
             </div>
 
             <div class="row mt-3">
                 <div class="col-lg-6">
                     <input class="col-lg-12 bot md_ad_form wid widd widdd widddd widdddd widddddd border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="name" placeholder="Refrence By">   
-                </div
+                </div>
 
                 <div class="col-lg-6">
-                    <input class="col-lg-12 bot mt-3 md_ad_form wid widd widdd widddd widdddd widddddd border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file"  placeholder="Upload Your Photo">
+                    <input id="photo" class="col-lg-12 bot  md_ad_form wid widd widdd widddd widdddd widddddd border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" type="file"  placeholder="Upload Your Photo">
+                    <div id="error20" class="red"></div>
                 </div>
 
             </div>
