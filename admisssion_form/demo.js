@@ -64,7 +64,7 @@ function done()
 
     if (!male && !female && !other)
     {
-        error4.textContent = '* please select gender️'
+        error4.textContent = '* required'
         error4.style.display = 'block';
         isValid = false;
     } else
@@ -78,7 +78,7 @@ function done()
 
     if (education == "Education")
     {
-        error5.textContent = '* please select your education';
+        error5.textContent = '* required';
         error5.style.display = 'block';
         isValid = false;
     } else
@@ -92,7 +92,7 @@ function done()
 
     if (language == "Language")
     {
-        error6.textContent = '* please select your language';
+        error6.textContent = '* required';
         error6.style.display = 'block';
         isValid = false;
     } else
@@ -107,7 +107,7 @@ function done()
 
     if (percentage == "Percentage")
     {
-        error7.textContent = '* please select your percentage';
+        error7.textContent = '* required';
         error7.style.display = 'block';
         isValid = false;
     } else
@@ -122,7 +122,7 @@ function done()
 
     if (pass == "Passing year")
     {
-        error8.textContent = '* please select your passing year';
+        error8.textContent = '* required';
         error8.style.display = 'block';
         isValid = false;
     } else
@@ -136,7 +136,7 @@ function done()
 
     if (bg == "Blood Group")
     {
-        error9.textContent = '* please select your blood group';
+        error9.textContent = '* required';
         error9.style.display = 'block';
         isValid = false;
     } else
@@ -150,7 +150,7 @@ function done()
 
     if (country == "Country")
     {
-        error10.textContent = '* please select your country';
+        error10.textContent = '* required';
         error10.style.display = 'block';
         isValid = false;
     } else
@@ -164,7 +164,7 @@ function done()
 
     if (state == "State")
     {
-        error11.textContent = '* please select your state';
+        error11.textContent = '* required';
         error11.style.display = 'block';
         isValid = false;
     } else
@@ -193,7 +193,7 @@ function done()
 
     if (wing === '')
     {
-        error13.textContent = '* this field cannot be empty';
+        error13.textContent = '* required';
         error13.style.display = 'block';
         isValid = false;
     } else
@@ -208,7 +208,7 @@ function done()
 
     if (build === '')
     {
-        error14.textContent = '* this field cannot be empty';
+        error14.textContent = '* required';
         error14.style.display = 'block';
         isValid = false;
     } else
@@ -222,7 +222,7 @@ function done()
 
     if (area === '')
     {
-        error15.textContent = '* this field cannot be empty';
+        error15.textContent = '* required';
         error15.style.display = 'block';
         isValid = false;
     } else
@@ -236,7 +236,7 @@ function done()
 
     if (city === '')
     {
-        error16.textContent = '* this field cannot be empty';
+        error16.textContent = '* required';
         error16.style.display = 'block';
         isValid = false;
     } else
@@ -251,7 +251,7 @@ function done()
 
     if (build === '')
     {
-        error17.textContent = '* this field cannot be empty';
+        error17.textContent = '* required';
         error17.style.display = 'block';
         isValid = false;
     } else
@@ -266,7 +266,7 @@ function done()
 
     if (dob === '')
     {
-        error18.textContent = '* this field cannot be empty';
+        error18.textContent = '* required';
         error18.style.display = 'block';
         isValid = false;
     } else
