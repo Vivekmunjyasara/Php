@@ -1,3 +1,4 @@
+
 function done()
 {
     //first name field
@@ -9,6 +10,23 @@ function done()
     {
         first === '' ? (error.textContent = '* required') : (error.textContent = '* space is not allowed');
         error.style.display = 'block';
+       
+//        for (var i = 0; i < 10000; i++){
+//            error.style.opacity ='1' ;
+//            error.style.opacity ='0' ;
+//        }
+       
+//        let i=1000;
+//        if(i%2==0)
+//        {
+//            error.style.opacity ='1' ;
+//        }
+//        else
+//        {
+//            error.style.opacity ='0' ;
+//        }
+        
+        //error.classList.add('blink');
         isValid = false;
     } else
     {
@@ -249,7 +267,7 @@ function done()
     let land = document.getElementById("land").value;
     let error17 = document.getElementById("error17");
 
-    if (build === '')
+    if (land === '')
     {
         error17.textContent = '* required';
         error17.style.display = 'block';
@@ -302,7 +320,6 @@ function done()
     {
         error20.style.display = 'none';
     }
-
     return isValid;
 }
 

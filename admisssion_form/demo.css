@@ -1,5 +1,6 @@
             body{
                 background: linear-gradient(45deg,#fffde4,#005aa7);
+                background-repeat: no-repeat;
             }
             .con{
                 background: linear-gradient(45deg,#005aa7,#fffde4);
@@ -25,34 +26,106 @@
             .red{
                 color: red;
             }
+            
             .hov:hover{
                 color:#fffde4;
                 background-color: #005aa7;
             }
-            .tra{
-                transition: width 2s,height 5s;
+            
+            .mll{
+                margin-left: 15%;
             }
-            .tra:hover{
-                width:50%;
-                height:50%; 
-            }
-            .ani{
-                width:100%;
+            
+            .left{
+                width: 25%;
+                animation-name: leftt;
+                animation-duration: 2s;
                 position: relative;
-                animation-name: anii;
-                animation-duration: 3s;
-            }
-            @keyframes anii{
-                0%{left:0px;top:0px;}
-                25%{left:0px;top:50px;}
-                50%{left: 0px;top: 0px;}
-                100%{left: 0px;top: -5px;}
+                animation-fill-mode: forwards;
             }
             
+            @keyframes leftt{
+                from{left:-1000px;}
+                to{left:0px;}
+            }
             
+             .bigleft{
+                width: 50%;
+                animation-name: leftt;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+            }
             
+            @keyframes leftt{
+                from{left:-1000px;}
+                to{left:0px;}
+            }
             
+             .right{
+                width: 25%;
+                animation-name: rightt;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+            }
             
+            @keyframes rightt{
+                from{left:1000px;}
+                to{left:0px;}
+            }
+            
+            .bigright{
+                width: 50%;
+                animation-name: rightt;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes rightt{
+                from{left:1000px;}
+                to{left:0px;}
+            }
+            
+            .top{
+                 width: 70%;
+                animation-name: topp;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes topp{
+                from{top:-1000px;}
+                to{top:0;}
+            }
+            
+                        
+            .down{
+                 width: 100%;
+                animation-name: downn;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+            }
+            
+            @keyframes downn{
+                from{top:1000px;}
+                to{top:0;}
+            }
+            
+            .blink{
+                animation-name: blink;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            
+            @keyframes blink{
+               0%{opacity: 1;}
+               50%{opacity: 0;}
+               100%{opacity: 1;}
+            }
             
             @media(max-width:360px){
                  .wid{
