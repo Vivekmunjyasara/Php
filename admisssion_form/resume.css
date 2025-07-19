@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(45deg,#283048,#859398);
+    background-repeat: no-repeat;
+}
+.res{
+    text-align: center; 
+    margin-top: 3%;
+    background-color: whitesmoke;
+}
+.container{
+    margin-top: 5%;
+    background-color: whitesmoke;
+    max-width:1700px;
+    padding: 50px;
+    padding-bottom: 5%;
+}
+.colo{
+    color: white;
+}
+.pad{
+    padding-bottom: 7%;
+}
+img{
+    border-radius: 50%;
+    margin-left: 38%;
+}
+.left{
+    margin-left: 7%;
+}
+.top{
+    margin-top: 5%;
+}
+hr{
+   border:  4px solid black;
+}
+.mb{
+    margin-left: 5%;
+}
+.dis{
+    display: flex;
+}
+.font{
+    font-size: 20px;
+}
+.ml{
+    margin-left: 25%;
+}     
+
+
