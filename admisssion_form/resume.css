@@ -2,14 +2,6 @@ body{
     background: linear-gradient(135deg,#2c3e50,#3498db);
     background-repeat: no-repeat;
 }
-.res{
-    text-align: center; 
-    margin-top: 3%;
-    background-color: whitesmoke;
-    width: 50%;
-    margin-left: 25%;
-    border-radius: 10px;
-}
 .container{
     margin-top: 3%;
     background-color: #f9f9f9;
@@ -57,4 +49,129 @@ hr{
 }
 .dec{
     text-decoration: underline;
+}
+.up{
+                animation-name: up;
+                animation-duration: 2s;
+                position: relative;
+                animation-fill-mode: forwards;
+}
+@keyframes up{
+    from{
+        top:-2000px;
+    }
+    to{
+        top:0px;
+    }
+}
+
+.leftt{
+    animation-name: left;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes left{
+    from{
+        left:-2000px;
+    }
+    to{
+        left:0px;
+    }
+}
+
+.rightt{
+    animation-name: right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes right{
+    from{
+        right:-2000px;
+    }
+    to{
+        right:0px;
+    }
+}
+
+.fade{
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-delay: 2s;
+      animation-fill-mode: forwards;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.down{
+    animation-name: down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes down{
+    from{
+        bottom: -2000px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+
+.fast{
+        animation-name: fast;
+        animation-duration: 3s;
+        position: relative;
+        animation-fill-mode: forwards;
+        
+      
+}
+@keyframes fast{
+    from{
+        left:-15000px;
+       
+    }
+    to{
+       left:0px; 
+       
+    }
+}
+
+.fastt{
+        animation-name: fastt;
+        animation-duration: 3s;
+        position: relative;
+        animation-fill-mode: forwards;     
+}
+@keyframes fastt{
+    from{
+        right: -15000px;
+       
+    }
+    to{
+       right:0px; 
+       
+    }
+}
+.late{
+        animation-name: late;
+        animation-duration: 2s;
+        animation-delay: 3s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+}
+@keyframes late{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

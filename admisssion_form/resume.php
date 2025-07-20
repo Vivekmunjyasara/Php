@@ -9,39 +9,38 @@
         <link rel="stylesheet" href="resume.css">
     </head>
     <body>
-        <p class="display-1 res fw-bold">Resume</p>
         <form class="container" >
-            <div class="row pad">
-                <h2 class="col-lg-4">☎+91-8928607602</h2>
-                <h2 class="col-lg-4">✉ munjyasaravivek@gmail.com</h2>
+            <div class="row pad up">
+                <h2 class="col-lg-4">☎<a href=tel:8928607602>+91-8928607602</a></h2>
+                <h2 class="col-lg-4">✉<a href="mailto:munjyasaravivek@gmail.com">munjyasaravivek@gmail.com</a></h2>
                 <h2 class="col-lg-1"></h2>
                 <h2 class="col-lg-3">🌍mumbai,india</h2>  
             </div>
 
-            <img class="pho" src="mounitain.jpg" alt="image" width="400px" height="400px"/>
+            <img class="pho up" src="mounitain.jpg" alt="image" width="400px" height="400px"/>
             <div class="row">
                 <span class="col-lg-3 left"></span>
-                <p class="display-1 fw-bold" style="margin-left:30%; ">vivek munjyasara</p>
+                <p class="display-1 fw-bold up" style="margin-left:30%; ">vivek munjyasara</p>
             </div>
-            <h2 style="text-align: center" class="mt-3" >WEB DEVELOPER</h2>
-            <h1 style="text-align: center" class="top" >CAREER OBJECTIVE</h1>
-            <h4 style="text-align: center" class="fst-italic">Aspiring IT professional currently pursuing BSc in Information Technology,looking to <br> gain real-world experience in web development and grow my skills in a dynamic,<br>growth-oriented environment</h4>
+            <h2 style="text-align: center" class="mt-3 leftt" >WEB DEVELOPER</h2>
+            <h1 style="text-align: center" class="top rightt" >CAREER OBJECTIVE</h1>
+            <h4 style="text-align: center" class="fst-italic fade">Aspiring IT professional currently pursuing BSc in Information Technology,looking to <br> gain real-world experience in web development and grow my skills in a dynamic,<br>growth-oriented environment</h4>
             <br>
-            <hr> 
+            <hr class="down"> 
             <!--            first row-->
             <div class="row">
-                <div class=" mb-3 col-lg-5">
+                <div class=" mb-3 col-lg-5 fast">
                     <h1 class="fw-bold dec">Technical Skills</h1>
                 </div>
                 <div class=" col-lg-1 line"></div>
-                <div  class="col-lg-4">
+                <div  class="col-lg-4 fastt">
                     <h1 class="fw-bold dec">Education</h1>
                 </div>
             </div>
 
             <!--            second row-->
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 late">
                     <ul>
                         <li class="mb"><h4>Languages: C,C++,HTML,CSS,JAVASCRIPT,PHP</h4></li><br>
                         <li class="mb"><h4>Web Technologies: Bootstrap,jquery(basics)</h4></li><br>
@@ -49,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-1 line"></div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 late">
                     <ul>
                         <h4 class="fw-bold">Degree: Bachelor of Science in Information Technology 2025-2026</h4><br>
                         <h4> University: Mumbai University</h4>
@@ -59,21 +58,21 @@
 
             <!--            third row-->
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 fast">
                     <h1 class="fw-bold p-3 mt-3 dec">Personal Skills</h1>
                 </div>
                 <div class="col-lg-1 line"></div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 late">
                     <h4 style="margin-left: 6%;" class="fw-bold" ><br>Higher Secondry Education (12 Grade)</h4>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 late">
                     <h4 style="margin-left: 35%;" class="fw-bold"><br>March 2024</h4>
                 </div>
             </div>
 
             <!--            fourth row-->
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 late">
                     <ul>
                         <li class="mb"><h4>Good communication skills</h4></li>
                         <li class="mb"><h4>Problem-Solving Mindset</h4></li>
@@ -85,7 +84,7 @@
                     </ul>     
                 </div>
                 <div class="col-lg-1 line"></div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 late">
                     <h4 style="margin-left: 5%;"  >V. D. Valia Junior College (M.K. College),borivali,maharashtra</h4>
                     <h4 class="fw-bold" style="margin-left: 5%;"><br><br>Secondary Education (10 Grade) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; april 2022</h4>
                     <h4 style="margin-left: 5%;" ><br>J.H.Poddar High School,bhayander(west),maharashtra </h4>
@@ -94,18 +93,18 @@
 
             <!--            fifth row-->
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 fast">
                     <h1 class="fw-bold dec" style="margin-left: 2%;">Projects</h1>
                 </div>
                 <div class="col-lg-1 line"></div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 fastt">
                     <h1 class="fw-bold dec" style="margin-left:6%;">HOBBIES</h1>
                 </div>
             </div>
 
             <!--            sixth row-->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 late">
                     <br><br>
                     <ol type="I" class="fw-bold font">
                         <li style="margin-left: 5%;"><h4>I created this project during the first year of my BSc IT degree.it is a <b>Student Admission Form</b> developed using <b>HTML,CSS,Bootstrap,</b>and <b>jQuery</b></h4></li> 
@@ -120,20 +119,20 @@
                 <span class="col-lg-1"></span>
                 <div class="col-lg-1 line"></div>
                 <div class="col-lg-6">
-                    <ul>
+                    <ul class="late">
                         <br>
                         <li class="ml"><h4>Reading Books</h4></li>
                         <li class="ml"><h4>Sports and Fitness</h4></li>
                         <li class="ml"><h4>Music</h4></li>
                     </ul>
                     <br><br><br>
-                    <h1 class="fw-bold">🔗Social Media & Contact</h1>
-                    <br><h4 class="ml">You can reach through:</h4>
+                    <h1 class="fw-bold fastt">🔗Social Media & Contact</h1>
+                    <br><h4 class="ml late">You can reach through:</h4>
                     <div class="ml">
-                        <ul>
+                        <ul class="late">
                             <li><img src="insta.png" alt="image" height="50px"><h4 style="margin-left: 8%; margin-top: -6%;">:<a href="https://www.instagram.com/vivek_munjyasara33?igsh=bTJkZXd2aTlyNnBw">vivek_munjyasara33</h4></a></li>
                             <br><li><img style="margin-left: 1%;" src="whatsapp.png" alt="alt" height="30px"><h4 style="margin-left: 8%; margin-top: -5%;">:<a href="https://wa.me/918928607602">For more details</h4></a></li>
-                            <br><li><img style="margin-left: 1%;" src="git.png" alt="alt" height="35px"><h4 style="margin-left: 8%; margin-top: -5%;">:<a href="https://wa.me/918928607602">Git profile</h4></a></li>
+                            <br><li><img style="margin-left: 1%;" src="git.png" alt="alt" height="35px"><h4 style="margin-left: 8%; margin-top: -5%;">:<a href="https://github.com/Vivekmunjyasara">Git profile</h4></a></li>
                         </ul>
                     </div>
                 </div>
