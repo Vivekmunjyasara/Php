@@ -2,7 +2,7 @@ $(document).ready(function () {
     let today = new Date;
     let newmonth = ((today.getMonth() + 1) < 10) ? ("0" + (today.getMonth() + 1)) : (today.getMonth() + 1);
     let styear = (today.getFullYear() - 18 + "-" + newmonth + "-" + today.getDate());
-            $("#dob").attr("max", styear);
+    $("#dob").attr("max", styear);
 });
 
 let isvalid;
@@ -14,7 +14,7 @@ function testerror()
     $(".inputt").each(function (index, element) {
         const val_to_check = $(this).val();
         const mess = document.getElementById($(this).attr('id') + "_error");
-        if ($(this).attr('id') === 'fn' || $(this).attr('id') === 'mn' || $(this).attr('id') === 'ln' || $(this).attr('id') === 'wing' || $(this).attr('id') === 'build' || $(this).attr('id') === 'area' || $(this).attr('id') === 'city' || $(this).attr('id') === 'land')
+        if ($(this).attr('id') === 'fn' || $(this).attr('id') === 'mn' || $(this).attr('id') === 'ln')
         {
             if (!(alpha.test(val_to_check)))
             {
@@ -25,7 +25,18 @@ function testerror()
             {
                 mess.style.display = 'none';
             }
-        } else if ($(this).attr('id') === 'pin' || $(this).attr('id') === 'pn')
+        } else if ($(this).attr('id') === 'wing' || $(this).attr('id') === 'build' || $(this).attr('id') === 'area' || $(this).attr('id') === 'city' || $(this).attr('id') === 'land')
+            {
+                if (val_to_check === '')
+                {
+                    mess.innerText = 'Please fill the input field';
+                    mess.style.display = 'block';
+                    isvalid = false;
+                } else
+                {
+                    mess.style.display = 'none';
+                }
+            }else if ($(this).attr('id') === 'pin' || $(this).attr('id') === 'pn')
         {
             if ($(this).attr('id') === 'pn')
             {
@@ -43,7 +54,20 @@ function testerror()
                 {
                     mess.style.display = 'none';
                 }
+            }else if($(this).attr('id') === 'dob')
+        {
+            if(val_to_check === "")
+            {
+                mess.innexText='please fill the date of birth';
+                mess.style.display='block';
+                isvalid=false;
             }
+            else
+            {
+                mess.style.display='none';
+            }
+        }
+            
 
             if ($(this).attr('id') === 'pin')
             {
@@ -63,7 +87,7 @@ function testerror()
                 }
             }
         }
-
+       
         if ($(this).attr('id') === 'ema')
         {
 
@@ -91,21 +115,21 @@ function testerror()
             }
         }
 
-//       if ($(this).attr('name') === 'option')
-//        {
-//            let ischecked = $("input[name = 'option']:checked").length > 0;
-//            let mess = document.getElementById("gender_error");
-//            if(!(ischecked))
-//            {
-//                mess.innerText='Please Select Gender';
-//                mess.style.display ='block';              
-////                $("input[name = 'option']").focus();
-//            }
-//            else
-//            {
-//                mess.style.display='none';
-//            }
-//        }
+       if ($(this).attr('name') === 'gender')
+        {
+            let ischecked = $("input[name = 'gender']:checked").length > 0;
+            let mess = document.getElementById("gender_error");
+            if(!(ischecked))
+            {
+                mess.innerText='Please Select Gender';
+                mess.style.display ='block';
+                isvalid=false;
+            }
+            else
+            {
+                mess.style.display='none';
+            }
+        }
     });
 
     $("select").each(function (index, element) {

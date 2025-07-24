@@ -20,17 +20,17 @@
             </div>
             <div class="row mb-3 ">
                 <div class="col-lg-3 right">
-                    <input id="fn" class="col-lg-12 inputt wid mar bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="name" name="fname" placeholder="First Name">
+                    <input id="fn" class="col-lg-12 inputt wid mar bg-transparent border-white border-top-0 border-start-0 border-end-0 text-white"  type="text" name="fname" placeholder="First Name">
                     <div id="fn_error" class="red blink "></div>
             </div>
                    
                 <div class="col-lg-3 right">
-                    <input id="mn" class="col-lg-12  wid inputt mar bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="name" name="mname" placeholder="Middle Name">
+                    <input id="mn" class="col-lg-12  wid inputt mar bg-transparent border-top-0 border-white border-start-0 border-end-0 text-white" type="text" name="mname" placeholder="Middle Name">
                     <div id="mn_error" class="red blink "></div>
                 </div>
 
                 <div class="col-lg-3 left ">
-                    <input id="ln" class="col-lg-12  wid mar inputt bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="name" name="lname" placeholder="Last Name">
+                    <input id="ln" class="col-lg-12  wid mar inputt bg-transparent border-top-0 border-start-0 border-white border-end-0 text-white" type="text" name="lname" placeholder="Last Name">
                     <div id="ln_error" class="red blink "></div>
                 </div>
 
@@ -46,15 +46,19 @@
                     <div id="ema_error" class="red blink "></div>
                 </div>
                 
-                <div class="left">
-                    <span class="col-lg-6   ">Select Gender:
-                    <span class="col-lg-6 "></span>
+                <div class="left col-lg-6">
+                    <span class="col-lg-6">Select Gender:</span>
                     <br>
-                    <input id="m" class="col-lg-1 inputt" type="radio" name="gender" value="Male" >Male 
-                    <input id="f" class="col-lg-1 inputt" type="radio" name="gender" value="Female">Female 
-                    <input id="o" class="col-lg-1 inputt" type="radio" name="gender" value="Other">Other
+                    <span class="col-lg-1">
+                    <input id="m" class="inputt" type="radio" name="gender" value="Male" >Male 
+                    </span>
+                    <span class="col-lg-1 inputt">
+                    <input id="f" class="inputt" type="radio" name="gender" value="Female">Female 
+                    </span>
+                    <span class=" inputt">
+                    <input id="o" class="inputt" type="radio" name="gender" value="Other">Other
+                    </span>
                     <div id="gender_error" class="red blink "></div>
-                </span>
                 </div>
             </div>  
                     

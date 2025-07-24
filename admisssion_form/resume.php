@@ -9,16 +9,17 @@
         <link rel="stylesheet" href="resume.css">
     </head>
     <body>
-        <form class="container" >
+        <form class="container scroll-content">
+          
             <div class="row pad up">
                 <h2 class="col-lg-4">☎<a href=tel:8928607602>+91-8928607602</a></h2>
                 <h2 class="col-lg-4">✉<a href="mailto:munjyasaravivek@gmail.com">munjyasaravivek@gmail.com</a></h2>
-                <h2 class="col-lg-1"></h2>
-                <h2 class="col-lg-3">🌍mumbai,india</h2>  
+                <h2 class="col-lg-2"></h2>
+                <h2 class="col-lg-2">🌍Mumbai,india</h2>  
             </div>
 
-            <img class="pho up" src="mounitain.jpg" alt="image" width="400px" height="400px"/>
-            <div class="row">
+            <img class="pho up" src="new.jpeg" alt="image" width="400px" height="400px"/>
+                     <div class="row">
                 <span class="col-lg-3 left"></span>
                 <p class="display-1 fw-bold up" style="margin-left:30%; ">vivek munjyasara</p>
             </div>
@@ -32,7 +33,7 @@
                 <div class=" mb-3 col-lg-5 fast">
                     <h1 class="fw-bold dec">Technical Skills</h1>
                 </div>
-                <div class=" col-lg-1 line"></div>
+                <div class=" col-lg-1 line up"></div>
                 <div  class="col-lg-4 fastt">
                     <h1 class="fw-bold dec">Education</h1>
                 </div>
@@ -47,7 +48,7 @@
                         <li class="mb"><h4>Database: Mysql</h4></li>
                     </ul>
                 </div>
-                <div class="col-lg-1 line"></div>
+                <div class="col-lg-1 line leftt"></div>
                 <div class="col-lg-5 late">
                     <ul>
                         <h4 class="fw-bold">Degree: Bachelor of Science in Information Technology 2025-2026</h4><br>
@@ -61,7 +62,7 @@
                 <div class="col-lg-5 fast">
                     <h1 class="fw-bold p-3 mt-3 dec">Personal Skills</h1>
                 </div>
-                <div class="col-lg-1 line"></div>
+                <div class="col-lg-1 line fade"></div>
                 <div class="col-lg-4 late">
                     <h4 style="margin-left: 6%;" class="fw-bold" ><br>Higher Secondry Education (12 Grade)</h4>
                 </div>
@@ -83,11 +84,11 @@
                         <li class="mb"><h4>Teamwork</h4></li><br><br>
                     </ul>     
                 </div>
-                <div class="col-lg-1 line"></div>
+                <div class="col-lg-1 line fade"></div>
                 <div class="col-lg-6 late">
-                    <h4 style="margin-left: 5%;"  >V. D. Valia Junior College (M.K. College),borivali,maharashtra</h4>
-                    <h4 class="fw-bold" style="margin-left: 5%;"><br><br>Secondary Education (10 Grade) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; april 2022</h4>
-                    <h4 style="margin-left: 5%;" ><br>J.H.Poddar High School,bhayander(west),maharashtra </h4>
+                    <h4 style="margin-left: 5%;"  >V. D. Valia Junior College (M.K. College),Borivali,Maharashtra</h4>
+                    <h4 class="fw-bold" style="margin-left: 5%;"><br><br>Secondary Education (10 Grade) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 2022</h4>
+                    <h4 style="margin-left: 5%;" ><br>J.H.Poddar High School,Bhayander(West),Maharashtra </h4>
                 </div>
             </div>
 
@@ -96,7 +97,7 @@
                 <div class="col-lg-5 fast">
                     <h1 class="fw-bold dec" style="margin-left: 2%;">Projects</h1>
                 </div>
-                <div class="col-lg-1 line"></div>
+                <div class="col-lg-1 line rightt"></div>
                 <div class="col-lg-5 fastt">
                     <h1 class="fw-bold dec" style="margin-left:6%;">HOBBIES</h1>
                 </div>
@@ -117,7 +118,7 @@
                     </ol>
                 </div>
                 <span class="col-lg-1"></span>
-                <div class="col-lg-1 line"></div>
+                <div class="col-lg-1 line down"></div>
                 <div class="col-lg-6">
                     <ul class="late">
                         <br>
@@ -130,7 +131,7 @@
                     <br><h4 class="ml late">You can reach through:</h4>
                     <div class="ml">
                         <ul class="late">
-                            <li><img src="insta.png" alt="image" height="50px"><h4 style="margin-left: 8%; margin-top: -6%;">:<a href="https://www.instagram.com/vivek_munjyasara33?igsh=bTJkZXd2aTlyNnBw">vivek_munjyasara33</h4></a></li>
+                            <li class="hov"><img src="insta.png" alt="image" height="50px"><h4 style="margin-left: 8%; margin-top: -6%;">:<a href="https://www.instagram.com/vivek_munjyasara33?igsh=bTJkZXd2aTlyNnBw">vivek_munjyasara33</h4></a></li>
                             <br><li><img style="margin-left: 1%;" src="whatsapp.png" alt="alt" height="30px"><h4 style="margin-left: 8%; margin-top: -5%;">:<a href="https://wa.me/918928607602">For more details</h4></a></li>
                             <br><li><img style="margin-left: 1%;" src="git.png" alt="alt" height="35px"><h4 style="margin-left: 8%; margin-top: -5%;">:<a href="https://github.com/Vivekmunjyasara">Git profile</h4></a></li>
                         </ul>
