@@ -10,7 +10,7 @@ class accept_data {
         $this->dbname = "studata";
         try {
             $this->datapdo = new PDO("mysql:host=$this->localhost;dbname=$this->dbname;","root","");
-            $this->query="insert into admission_form(first_name,middle_name, last_name, phone, email, gender, education, language, percentage, passing_year, wing, building, area, city, landmark, pincode, dob, blood_grp, country, state, refrence) values('".$this->fname."','".$this->mname."','".$this->lname."',".$this->phone.",'".$this->email."','".$this->gen."','".$this->eqa."','".$this->lan."',".$this->per.",".$this->pass.",'".$this->wing."','".$this->build."','".$this->area."','".$this->city."','".$this->land."',".$this->pin.",'".$this->dob."','".$this->bg."','".$this->country."','".$this->state."','".$this->ref."')";
+            $this->query="insert into admission_form(first_name,middle_name, last_name, phone, email, gender, education, language, percentage, passing_year, wing, building, area, city, landmark, pincode, dob, blood_grp, country, state, refrence,photo) values('".$this->fname."','".$this->mname."','".$this->lname."',".$this->phone.",'".$this->email."','".$this->gen."','".$this->eqa."','".$this->lan."',".$this->per.",".$this->pass.",'".$this->wing."','".$this->build."','".$this->area."','".$this->city."','".$this->land."',".$this->pin.",'".$this->dob."','".$this->bg."','".$this->country."','".$this->state."','".$this->ref."',".$this->photo.")";
             $this->datapdo->exec($this->query);  
         }       
         catch (Exception $e) 
@@ -42,7 +42,7 @@ class accept_data {
        $this->country = empty(filter_input(INPUT_POST,'country', FILTER_SANITIZE_STRING))?"COUNTRY NOT SELECTED":filter_input(INPUT_POST,'country', FILTER_SANITIZE_STRING);
         $this->state = empty(filter_input(INPUT_POST,'state', FILTER_SANITIZE_STRING))?"STATE NOT SELECTED":filter_input(INPUT_POST,'state', FILTER_SANITIZE_STRING);
         $this->ref = empty(filter_input(INPUT_POST,'ref', FILTER_SANITIZE_SPECIAL_CHARS))?"NO REFERENCE":filter_input(INPUT_POST,'ref', FILTER_SANITIZE_SPECIAL_CHARS);
-        
+        $this->photo= $_POST['photo'];
         }
         }
     function view_data(){

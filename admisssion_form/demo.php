@@ -13,10 +13,10 @@
     </head>
 
     <body>        
-        <form onsubmit="return hi()" action="process_admission_form.php" method="post" class="container admission ani con rounded container ">
+        <form onsubmit="return hi()" action="process_admission_form.php" method="post" entype="multipart/form-data" class="container admission ani con rounded container ">
             <br><br>
             <div class="text-center">
-                <h1 class="fw-bold display-3 down  border border-1 border-dark rounded-pill mb-5 ">Admission Form</h1>
+                <h1 class="fw-bold display-3 down  border border-1 border-dark rounded-pill mb-5">Admission Form</h1>
             </div>
             <div class="row mb-3 ">
                 <div class="col-lg-3 right">
@@ -232,7 +232,7 @@
                 </div>
 
                 <div class="col-lg-6 mb-4 left">
-                    <input id="photo" class="col-lg-12 inputt mar wid border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" name="photo" type="file"  placeholder="Upload Your Photo">
+                    <input id="photo" class="col-lg-12 inputt mar wid border-white bg-transparent border-top-0 border-start-0 border-end-0 text-white" name="photo" type="file" accept="image/jpeg,image/jpg"  placeholder="Upload Your Photo">
                     <div id="photo_error" class="red blink "></div>
                 </div>
 

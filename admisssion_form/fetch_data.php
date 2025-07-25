@@ -1,6 +1,4 @@
-
 <?php
-
 class fetching {
    
     public $localhost,$dbname,$conn,$query,$datapdo,$result;
@@ -28,7 +26,6 @@ class fetching {
         }
     }
 }
-
 $obj = new fetching();
 $obj->getdata();
 
