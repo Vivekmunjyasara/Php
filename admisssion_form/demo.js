@@ -9,6 +9,7 @@ let isvalid;
 
 function testerror()
 {
+
     const pattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     const alpha = /^[a-zA-Z]+$/;
     $(".inputt").each(function (index, element) {
@@ -26,17 +27,17 @@ function testerror()
                 mess.style.display = 'none';
             }
         } else if ($(this).attr('id') === 'wing' || $(this).attr('id') === 'build' || $(this).attr('id') === 'area' || $(this).attr('id') === 'city' || $(this).attr('id') === 'land')
+        {
+            if (val_to_check === '')
             {
-                if (val_to_check === '')
-                {
-                    mess.innerText = 'Please fill the input field';
-                    mess.style.display = 'block';
-                    isvalid = false;
-                } else
-                {
-                    mess.style.display = 'none';
-                }
-            }else if ($(this).attr('id') === 'pin' || $(this).attr('id') === 'pn')
+                mess.innerText = 'Please fill the input field';
+                mess.style.display = 'block';
+                isvalid = false;
+            } else
+            {
+                mess.style.display = 'none';
+            }
+        } else if ($(this).attr('id') === 'pin' || $(this).attr('id') === 'pn')
         {
             if ($(this).attr('id') === 'pn')
             {
@@ -54,20 +55,19 @@ function testerror()
                 {
                     mess.style.display = 'none';
                 }
-            }else if($(this).attr('id') === 'dob')
-        {
-            if(val_to_check === "")
+            } else if ($(this).attr('id') === 'dob')
             {
-                mess.innexText='please fill the date of birth';
-                mess.style.display='block';
-                isvalid=false;
+                if (val_to_check === "")
+                {
+                    mess.innexText = 'please fill the date of birth';
+                    mess.style.display = 'block';
+                    isvalid = false;
+                } else
+                {
+                    mess.style.display = 'none';
+                }
             }
-            else
-            {
-                mess.style.display='none';
-            }
-        }
-            
+
 
             if ($(this).attr('id') === 'pin')
             {
@@ -87,7 +87,7 @@ function testerror()
                 }
             }
         }
-       
+
         if ($(this).attr('id') === 'ema')
         {
 
@@ -104,9 +104,21 @@ function testerror()
 
         if ($(this).attr('id') === 'photo')
         {
+            const fileinput = document.getElementById('photo');
+            const file = fileinput.files[0];
+            const filesize = file.size / 1024;
             if (val_to_check === '')
             {
                 mess.innerText = 'upload your photo';
+                mess.style.display = 'block';
+                isvalid = false;
+            } else if (!(file.type === 'image/jpg' || file.type === 'image/jpeg'))
+            {
+                mess.innerText = 'Only jpg and jpeg';
+                mess.style.display = 'block';
+                isvalid = false;
+            } else if (filesize < 300 || filesize > 500) {
+                mess.innerText = 'minimum 300kb and maximum 500kb';
                 mess.style.display = 'block';
                 isvalid = false;
             } else
@@ -115,19 +127,23 @@ function testerror()
             }
         }
 
-       if ($(this).attr('name') === 'gender')
+
+
+
+
+
+        if ($(this).attr('name') === 'gender')
         {
             let ischecked = $("input[name = 'gender']:checked").length > 0;
             let mess = document.getElementById("gender_error");
-            if(!(ischecked))
+            if (!(ischecked))
             {
-                mess.innerText='Please Select Gender';
-                mess.style.display ='block';
-                isvalid=false;
-            }
-            else
+                mess.innerText = 'Please Select Gender';
+                mess.style.display = 'block';
+                isvalid = false;
+            } else
             {
-                mess.style.display='none';
+                mess.style.display = 'none';
             }
         }
     });
