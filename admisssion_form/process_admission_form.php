@@ -1,17 +1,19 @@
 <html>
     <head>
-        <title>
-            
+        <title> 
         </title>
         <style>
             body{
-                background-color: black;
-                color: white;
+                background: linear-gradient(45deg,#fffde4,#005aa7);
+                color: black;
                 text-align: center;
                 padding-top: 20%;
             }
+            .container{
+                 background: linear-gradient(45deg,#005aa7,#fffde4);
+            }
             .inner{
-                border: 2px dotted white;
+                border: 2px dotted black;
                 display: block;
             }
             h1{
@@ -28,7 +30,7 @@
 class accept_data {
 
     public $fname, $mname, $lname, $phone, $email, $gen, $eqa, $lan, $per, $pass, $wing, $build, $area, $city, $land, $pin, $dob, $bg, $country, $state, $ref, $img;
-    public $datapdo, $localhost, $dbname, $con, $query, $target_dir, $target_file,$imageFileType,$uploadok,$check;
+    public $datapdo, $localhost, $dbname, $con, $query, $target_dir, $target_file,$imageFileType,$uploadok,$check,$done,$new_email_name,$email_name;
 
     function upload_data() {
         $this->localhost = "127.0.0.1";
@@ -37,32 +39,35 @@ class accept_data {
         $this->target_dir = "C:\\xampp\\htdocs\\Php\\admisssion_form\\";
         $this->target_file = $this->target_dir . basename($_FILES["photo"]["name"]);
         $this->uploadok = 1;
+        $this->new_email_name=$_POST['ema'];
         $this->imageFileType = strtolower(pathinfo($this->target_file, PATHINFO_EXTENSION));
+        $this->email_name=$this->new_email_name.".".$this->imageFileType;
+        
 
         if (isset($_POST["submit"])) {
             $this->check = getimagesize($_FILES["photo"]["tmp_name"]);
             if ($this->check !== false) {
-                echo "File is an image - " . $this->check["mime"] . ".";
+//                echo "File is an image - " . $this->check["mime"] . ".";
                 $this->uploadok = 1;
             } else {
-                echo "File is not an image.";
+//                echo "File is not an image.";
                 $this->uploadok = 0;
             }
         }
 
         if (file_exists($this->target_file)) {
-            echo "Sorry, file already exists.";
-            $uploadOk = 0;
+//            echo "Sorry, file already exists.";
+            $this->uploadok = 0;
         }
 
         if ($this->uploadok == 0) {
-            echo "Sorry, your file was not uploaded.";
+           // echo "Sorry, your file was not uploaded.";
          // if everything is ok, try to upload file
         } else {
-            if (move_uploaded_file($_FILES["photo"]["tmp_name"], $this->target_file)) {
-                echo "The file " . htmlspecialchars(basename($_FILES["photo"]["name"])) . " has been uploaded.";
+            if (move_uploaded_file($_FILES["photo"]["tmp_name"], $this->email_name)) {
+              //  echo "The file " . htmlspecialchars(basename($_FILES["photo"]["name"])) . " has been uploaded.";
             } else {
-                echo "Sorry, there was an error uploading your file.";
+               // echo "Sorry, there was an error uploading your file.";
             }
         }
 
@@ -104,8 +109,8 @@ class accept_data {
     }
 
     function view_data() {
-        echo "<h1 class=inner>THANK YOU FOR SUBMITTING FORM</h1>";   
-       
+        
+        echo "<h1 class=inner container>THANK YOU FOR SUBMITTING FORM</h1>"; 
     }
 }
 

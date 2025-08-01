@@ -2,7 +2,7 @@ $(document).ready(function () {
     let today = new Date;
     let newmonth = ((today.getMonth() + 1) < 10) ? ("0" + (today.getMonth() + 1)) : (today.getMonth() + 1);
     let styear = (today.getFullYear() - 18 + "-" + newmonth + "-" + today.getDate());
-    $("#dob").attr("max", styear);
+    $("#dob").attr("max",styear);
 });
 
 let isvalid;

@@ -13,7 +13,7 @@
     </head>
 
     <body>        
-        <form onsubmit="return hi()" action="process_admission_form.php" method="post" enctype="multipart/form-data" class="container admission ani con rounded container ">
+        <form onsubmit="return hi()" action="process_admission_form.php" method="post" enctype="multipart/form-data" class="admission ani con rounded container ">
             <br><br>
             <div class="text-center">
                 <h1 class="fw-bold display-3 down  border border-1 border-dark rounded-pill mb-5">Admission Form</h1>

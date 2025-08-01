@@ -1,9 +1,11 @@
             body{
                 background: linear-gradient(45deg,#fffde4,#005aa7);
                 background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
             }
             .con{
-                background: linear-gradient(45deg,#005aa7,#fffde4);
+                background: linear-gradient(45deg,#005aa7,#fffde4); 
             }
             input::placeholder{
                 color: white;
