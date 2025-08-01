@@ -74,7 +74,7 @@ class accept_data {
         try {
             
             $this->datapdo = new PDO("mysql:host=$this->localhost;dbname=$this->dbname;", "root", "");
-            $this->query = "insert into admission_form(first_name,middle_name, last_name, phone, email, gender, education, language, percentage, passing_year, wing, building, area, city, landmark, pincode, dob, blood_grp, country, state, refrence) values('" . $this->fname . "','" . $this->mname . "','" . $this->lname . "'," . $this->phone . ",'" . $this->email . "','" . $this->gen . "','" . $this->eqa . "','" . $this->lan . "'," . $this->per . "," . $this->pass . ",'" . $this->wing . "','" . $this->build . "','" . $this->area . "','" . $this->city . "','" . $this->land . "'," . $this->pin . ",'" . $this->dob . "','" . $this->bg . "','" . $this->country . "','" . $this->state . "','" . $this->ref . "')";
+            $this->query = "insert into admission_form(first_name,middle_name, last_name, phone, email, gender, education, language, percentage, passing_year, wing, building, area, city, landmark, pincode, dob, blood_grp, country, state, refrence,image) values('" . $this->fname . "','" . $this->mname . "','" . $this->lname . "'," . $this->phone . ",'" . $this->email . "','" . $this->gen . "','" . $this->eqa . "','" . $this->lan . "'," . $this->per . "," . $this->pass . ",'" . $this->wing . "','" . $this->build . "','" . $this->area . "','" . $this->city . "','" . $this->land . "'," . $this->pin . ",'" . $this->dob . "','" . $this->bg . "','" . $this->country . "','" . $this->state . "','" . $this->ref . "','". $this->email_name ."')";
             $this->datapdo->exec($this->query);
         } catch (Exception $e) {
             echo $e;
@@ -116,7 +116,8 @@ class accept_data {
 
 $acpt_data = new accept_data();
 $acpt_data->read_data();
-$acpt_data->view_data();
 $acpt_data->upload_data();
+$acpt_data->view_data();
+
 ?>
 

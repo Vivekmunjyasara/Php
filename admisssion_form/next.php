@@ -2,7 +2,7 @@
 
 class fetching {
 
-    public $localhost, $dbname, $conn, $query, $datapdo, $result,$offset,$stmt,$totalquery,$next,$prev;
+    public $localhost, $dbname, $conn, $query, $datapdo, $result, $offset, $stmt, $totalquery, $next, $prev, $total;
 
     function getdata() {
         $this->localhost = "127.0.0.1";
@@ -10,10 +10,10 @@ class fetching {
 
         try {
             $this->datapdo = new PDO("mysql:host=$this->localhost;dbname=$this->dbname;", "root", "");
-            $this->offset = isset($_GET['offset']) ? (int)$_GET['offset'] : 0;
-            $this->stmt = $this->datapdo->prepare("SELECT * FROM admission_form ORDER BY roll_no ASC LIMIT :limit OFFSET $this->offset");
-            $this->totalquery=$this->datapdo->query("select count(*) from admission_form ");
-            $this->total=$this->totalquery->fetchColumn();
+            $this->offset = isset($_GET['offset']) ? (int) $_GET['offset'] : 0;
+            $this->stmt = $this->datapdo->prepare("SELECT * FROM admission_form ORDER BY roll_no ASC LIMIT 1 OFFSET $this->offset");
+            $this->totalquery = $this->datapdo->query("select count(*) from admission_form ");
+            $this->total = $this->totalquery->fetchColumn();
             $this->query = "SELECT first_name,middle_name,last_name,phone,email,gender,education,language,percentage,passing_year,wing,building,area,city,landmark,pincode,dob,blood_grp,country,state,refrence,image FROM admission_form";
             $this->result = $this->datapdo->query($this->query);
             echo '<!Doctype html>
@@ -190,23 +190,24 @@ class fetching {
             <br><br>
             
         </form>';
+
+                $this->prev = $this->offset - 1;
+                $this->next = $this->offset + 1;
+
+                echo '<div class="row">';
+                if ($this->offset > 0) {
+                    echo '<a href="offset="' . $this->prev . ' class="rounded  btn" value="prev">Prev</a>';
+                }
+                if ($this->offset + 1 < $this->total) {
+                    echo ' <a href="offset=' . $this->next . ' class="rounded btn mt-4 " value="next">Next</a>';
+                }
+                echo '</div>';
             }
 
             echo ' </body>
 </html>';
         } catch (Exception $e) {
             echo $e;
-        }
-        $this->prev=$this->offset+1;
-        $this->next=$this->offset-1;
-        
-        if($this->offset>0)
-        {
-            echo '<a href="offset"?'.$this->prev.' class="rounded  btn border-white" value="prev">';
-        }
-        if($this->offset + 1 < $this->total)
-        {
-            echo ' <a href="offset"?'.$this->next.' class="rounded btn mt-4 border-white" value="next">';
         }
     }
 }
