@@ -1,8 +1,7 @@
 <?PHP
-
 class fetching {
 
-    public $localhost, $dbname, $conn, $query, $datapdo, $result, $offset, $stmt, $totalquery, $next, $prev, $total;
+    public $localhost,$dbname,$conn,$query,$datapdo,$result,$offset,$totalquery,$next,$prev,$total;
 
     function getdata() {
         $this->localhost = "127.0.0.1";
@@ -11,12 +10,13 @@ class fetching {
         try {
             $this->datapdo = new PDO("mysql:host=$this->localhost;dbname=$this->dbname;", "root", "");
             $this->offset = isset($_GET['offset']) ? (int) $_GET['offset'] : 0;
-            $this->stmt = $this->datapdo->prepare("SELECT * FROM admission_form ORDER BY roll_no ASC LIMIT 1 OFFSET $this->offset");
-            $this->totalquery = $this->datapdo->query("select count(*) from admission_form ");
+            $this->query ="SELECT * FROM admission_form ORDER BY roll_no LIMIT 1 OFFSET $this->offset";
+            $this->totalquery = $this->datapdo->query("select count(*) from admission_form");
             $this->total = $this->totalquery->fetchColumn();
-            $this->query = "SELECT first_name,middle_name,last_name,phone,email,gender,education,language,percentage,passing_year,wing,building,area,city,landmark,pincode,dob,blood_grp,country,state,refrence,image FROM admission_form";
+//            $this->query = "SELECT first_name,middle_name,last_name,phone,email,gender,education,language,percentage,passing_year,wing,building,area,city,landmark,pincode,dob,blood_grp,country,state,refrence,image FROM admission_form";
             $this->result = $this->datapdo->query($this->query);
-            echo '<!Doctype html>
+            
+echo '<!Doctype html>
 <html>
     <head>
         <title>ADMISSION FORM</title>
@@ -26,8 +26,6 @@ class fetching {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
         <link rel="stylesheet" href="demo.css">
        
-        
-        <script src="demo.js"></script>
     </head>
 
     <body>        
@@ -187,27 +185,25 @@ class fetching {
             </div>
           
                 
-            <br><br>
-            
-        </form>';
+            <br><br>';
+             $this->prev = $this->offset - 1;
+             $this->next = $this->offset + 1;
 
-                $this->prev = $this->offset - 1;
-                $this->next = $this->offset + 1;
-
-                echo '<div class="row">';
+                echo '<div>';
                 if ($this->offset > 0) {
-                    echo '<a href="offset="' . $this->prev . ' class="rounded  btn" value="prev">Prev</a>';
+                    echo '<button class="p border-white "><a href=" ?offset='.$this->prev.'">Previous</a></button>';
                 }
                 if ($this->offset + 1 < $this->total) {
-                    echo ' <a href="offset=' . $this->next . ' class="rounded btn mt-4 " value="next">Next</a>';
+                  echo '<button class="n border-white"><a href=" ?offset='.$this->next.'">Next</a></button>';
                 }
                 echo '</div>';
             }
 
-            echo ' </body>
+echo'</form>
+</body>
 </html>';
         } catch (Exception $e) {
-            echo $e;
+            echo $e;    
         }
     }
 }
